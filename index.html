@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Holiday Light Installation Services</title>
+    <!-- Use a festive font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0c4a6e; /* A deep, festive blue-green */
+            color: white;
+            scroll-behavior: smooth;
+        }
+        /* Custom CSS for a twinkling/glowing effect on the button */
+        @keyframes glow {
+            0% {
+                filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+            }
+            50% {
+                filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+            }
+            100% {
+                filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+            }
+        }
+        .animate-glow {
+            animation: glow 2s ease-in-out infinite;
+        }
+        .hero-bg {
+            background-image: url('./img/hero.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-green-900/90 backdrop-blur-sm shadow-lg">
+        <div class="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+            <a href="#home" class="text-white text-2xl font-bold tracking-tight">Lights Inc.</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-white hover:text-red-300 transition-colors duration-200">Home</a>
+                <a href="#about" class="text-white hover:text-red-300 transition-colors duration-200">About Us</a>
+                <a href="#events" class="text-white hover:text-red-300 transition-colors duration-200">Events & Commercial</a>
+                <a href="#contact" class="text-white hover:text-red-300 transition-colors duration-200">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-900/90 py-2">
+            <a href="#home" class="block py-2 px-4 text-white hover:bg-green-800 transition-colors">Home</a>
+            <a href="#about" class="block py-2 px-4 text-white hover:bg-green-800 transition-colors">About Us</a>
+            <a href="#events" class="block py-2 px-4 text-white hover:bg-green-800 transition-colors">Events & Commercial</a>
+            <a href="#contact" class="block py-2 px-4 text-white hover:bg-green-800 transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Home) -->
+    <div id="home" class="hero-bg relative min-h-screen flex items-center justify-center p-4 pt-20 md:pt-0">
+        <div class="absolute inset-0 bg-gradient-to-t from-red-800/80 to-green-900/80"></div>
+        <div class="relative max-w-4xl w-full mx-auto text-center px-4 md:px-8 py-16 rounded-xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight text-white mb-4 drop-shadow-xl">
+                Dazzling Holiday Lights, <br> Without the Hassle
+            </h1>
+            <p class="text-lg md:text-xl font-medium text-white mb-8 drop-shadow-lg max-w-2xl mx-auto">
+                Transform your home into a winter wonderland with our professional Christmas light installation, maintenance, and removal services.
+            </p>
+            <a href="#contact" class="inline-block bg-white text-green-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-colors duration-300 animate-glow">
+                Get Your Free Quote Today
+            </a>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="bg-red-800 py-16 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Our Simple 3-Step Process</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-red-700 p-8 rounded-xl shadow-lg transform transition-transform hover:scale-105">
+                    <div class="mb-4 text-4xl">🎄</div>
+                    <h3 class="text-xl font-semibold mb-2">Installation</h3>
+                    <p class="text-gray-200">
+                        Our experts design a custom light display and install everything with precision, ensuring a perfect look and safe setup.
+                    </p>
+                </div>
+                <div class="bg-green-900 p-8 rounded-xl shadow-lg transform transition-transform hover:scale-105">
+                    <div class="mb-4 text-4xl">🔧</div>
+                    <h3 class="text-xl font-semibold mb-2">Maintenance</h3>
+                    <p class="text-gray-200">
+                        We handle any burnt-out bulbs or issues, keeping your display looking flawless and bright all season long.
+                    </p>
+                </div>
+                <div class="bg-red-700 p-8 rounded-xl shadow-lg transform transition-transform hover:scale-105">
+                    <div class="mb-4 text-4xl">📦</div>
+                    <h3 class="text-xl font-semibold mb-2">Removal & Storage</h3>
+                    <p class="text-gray-200">
+                        When the season ends, we carefully remove and store your lights, so you don't have to lift a finger.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Section -->
+    <div id="about" class="bg-green-900 py-16 px-4 md:px-8">
+      <div class="max-w-6xl mx-auto grid gap-8 items-center md:grid-cols-2">
+        <!-- Text block (mobile:) -->
+        <div class="order-2 md:order-1 text-center md:text-left">
+          <h2 class="text-3xl md:text-4xl font-bold text-red-800 mb-6">About Us</h2>
+
+          <p class="text-lg md:text-xl max-w-3xl mx-auto md:mx-0 mb-4 text-gray-100">
+            We are a family-owned and operated business dedicated to bringing holiday joy to our community. For over a decade, we've helped homeowners and businesses create stunning, memorable displays that stand out.
+          </p>
+
+          <p class="text-lg md:text-xl max-w-3xl mx-auto md:mx-0 text-gray-100">
+            Our team is passionate about lighting and committed to providing a seamless, stress-free experience from start to finish. We use only high-quality, durable lights and follow the highest safety standards to ensure your display is beautiful and reliable.
+          </p>
+        </div>
+
+        <!-- Image block (mobile:) -->
+        <div class="order-1 md:order-2">
+          <!-- Replace src with your image path or URL -->
+          <img
+            src="./img/about.jpg"
+            alt="Team installing holiday lights"
+            class="w-full max-w-md mx-auto rounded-2xl shadow-lg object-cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div id="contact" class="bg-green-900 py-16 px-4 md:px-8">
+        <div class="max-w-2xl mx-auto p-8 bg-white rounded-xl shadow-xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-red-800 mb-6">Request a Free Quote</h2>
+            <form id="leadForm" class="space-y-6 text-gray-800">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500">
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500">
+                </div>
+                <div>
+                    <label for="callbackTime" class="block text-sm font-medium text-gray-700">Preferred Call-back Time</label>
+                    <select id="callbackTime" name="callbackTime" required class="mt-1 block w-full px-4 py-3 border border-gray-300 bg-white rounded-md shadow-sm focus:ring-green-500 focus:border-green-500">
+                        <option value="">Select a time...</option>
+                        <option value="Morning (9am-12pm)">Morning (9am-12pm)</option>
+                        <option value="Afternoon (1pm-5pm)">Afternoon (1pm-5pm)</option>
+                        <option value="Evening (5pm-8pm)">Evening (5pm-8pm)</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-red-800 text-white font-bold py-4 rounded-full shadow-lg hover:bg-red-700 transition-colors duration-300">
+                    Submit My Request
+                </button>
+            </form>
+            <div id="statusMessage" class="mt-4 text-center text-sm font-medium" style="display: none;"></div>
+        </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <div class="bg-gray-800 py-8 px-4 md:px-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 Holiday Light Services. All rights reserved By G.Roy.</p>
+    </div>
+
+    <!-- A simple message box for user feedback -->
+    <div id="messageBox" class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 z-50 p-4" style="display: none;">
+        <div class="bg-white p-8 rounded-xl shadow-lg text-center max-w-sm w-full">
+            <h3 id="messageTitle" class="text-2xl font-bold mb-4 text-green-900"></h3>
+            <p id="messageText" class="text-gray-700 mb-6"></p>
+            <button onclick="document.getElementById('messageBox').style.display='none';" class="bg-red-800 text-white py-2 px-6 rounded-full hover:bg-red-700 transition-colors">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Custom message box function to replace alert()
+        function showMessageBox(title, message) {
+            document.getElementById('messageTitle').innerText = title;
+            document.getElementById('messageText').innerText = message;
+            document.getElementById('messageBox').style.display = 'flex';
+        }
+
+        document.getElementById('leadForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const statusMessage = document.getElementById('statusMessage');
+            statusMessage.style.display = 'block';
+            statusMessage.className = 'mt-4 text-center font-medium text-gray-500';
+            statusMessage.innerText = 'Submitting...';
+
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+
+            // --- IMPORTANT: READ THIS SECTION ---
+            // To make this form work, you will need a server-side script.
+            // This is because client-side JavaScript (which is what this code is) cannot
+            // directly send emails or write to a Google Sheet for security reasons.
+            //
+            // Here's what you need to do:
+            // 1. Create a server endpoint (e.g., using Google Apps Script, AWS Lambda, or a simple PHP file).
+            //    This script will receive the form data as a POST request.
+            // 2. The server script will then:
+            //    a) Send an email to your Gmail address with the form data.
+            //    b) Append a new row to a Google Sheet with the lead's information.
+            //
+            // 3. Replace 'YOUR_SERVER_ENDPOINT_URL' below with the URL of your new script.
+            //
+            // Example Google Apps Script for a Google Sheet:
+            // Go to script.google.com, create a new script, and paste code to handle the POST request.
+            // Then, deploy it as a web app to get the endpoint URL.
+            // You can find many tutorials online for "Google Apps Script form to spreadsheet".
+            // ------------------------------------
+
+            const serverEndpoint = 'YOUR_SERVER_ENDPOINT_URL';
+
+            try {
+                const response = await fetch(serverEndpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                if (response.ok) {
+                    showMessageBox('Success!', 'Thank you for your inquiry. We will be in touch shortly!');
+                    event.target.reset(); // Clear the form
+                    statusMessage.style.display = 'none';
+                } else {
+                    showMessageBox('Submission Failed', 'Something went wrong. Please try again or contact us directly.');
+                    statusMessage.className = 'mt-4 text-center font-medium text-red-500';
+                    statusMessage.innerText = 'Submission failed. Please try again.';
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                showMessageBox('Submission Failed', 'A network error occurred. Please check your connection and try again.');
+                statusMessage.className = 'mt-4 text-center font-medium text-red-500';
+                statusMessage.innerText = 'A network error occurred.';
+            }
+        });
+
+        // Mobile menu toggle logic
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+    </script>
+
+</body>
+</html>
